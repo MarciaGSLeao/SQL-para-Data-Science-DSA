@@ -20,6 +20,7 @@ go
 -- Carga massiva
 select * from tb_dados_ca
 
+begin transaction
 bulk insert tb_dados_ca
 from '\\VM-DELL\Users\VM_Dell\Downloads\breast-cancer.csv' 
 with(
