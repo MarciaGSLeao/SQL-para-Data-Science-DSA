@@ -15,7 +15,7 @@ create table tb_navios(
 go
 
 bulk insert tb_navios
-from '\\VM-DELL\Users\VM_Dell\Downloads\DADOS_ABERTOS_INSPECAO_NAVIO.csv'  -- Caminho do arquivo no Servidor em que está instalado o SGBD (VM no Dell).
+from '\\VM-DELL\Users\VM_Dell\Downloads\Cap02_dataset_DADOS_ABERTOS_INSPECAO_NAVIO.csv'  -- Caminho do arquivo no Servidor em que está instalado o SGBD (VM no Dell).
 with(
 	format = 'csv',
 	firstrow = 2,
