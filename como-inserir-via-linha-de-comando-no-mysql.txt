@@ -1,0 +1,17 @@
+# Windows
+mysql --local-infile=1 -u root -p
+
+# Linux ou MacOS
+/usr/local/mysql/bin/mysql --local-infile=1 -u root -p
+
+# Execute o código abaixo:
+SET GLOBAL local_infile=true;
+
+# Carregar os dados
+LOAD DATA LOCAL INFILE 'informar o caminho do arquivo' 
+INTO TABLE 'nome da tabela'
+CHARACTER SET UTF8
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES;
