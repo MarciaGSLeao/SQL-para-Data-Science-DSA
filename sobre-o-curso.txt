@@ -1,0 +1,1 @@
+- técnica de binarização e codificação para análise de dados;
